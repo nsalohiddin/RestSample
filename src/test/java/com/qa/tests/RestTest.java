@@ -23,7 +23,7 @@ public class RestTest {
 
     public static void main(String[] args) {
 //        Response response = doGetRequest("https://jsonplaceholder.typicode.com/users");
-        Response response = doGetRequest("https://jsonplaceholder.typicode.com/users/1");
+        
 
 ////        List<String> jsonResponse = response.jsonPath().getList("$");
 //        List<String> jsonResponse = response.jsonPath().getList("username");
@@ -32,7 +32,8 @@ public class RestTest {
 //        System.out.println(jsonResponse.size());
 //        System.out.println(usernames);
 //        System.out.println(jsonResponse.get(0));
-       
+    	/// ==============================================
+    	Response response = doGetRequest("https://jsonplaceholder.typicode.com/users/1");
         Map<String, String> company = response.jsonPath().getMap("company");
         System.out.println(company.get("name"));
         //=================================
